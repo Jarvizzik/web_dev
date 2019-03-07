@@ -22,38 +22,38 @@
         <ul>
           <li><a>Form</a>
             <ul id="form">
-              <li><a href="get.html">GET</a></li>
-              <li><a href="post.html">POST</a></li>
-              <li><a href="file-upload.html">file upload</a></li>
+              <li><a href="../navbar-pages/get.html" targe="_parent">GET</a></li>
+              <li><a href="../navbar-pages/post.html">POST</a></li>
+              <li><a href="../navbar-pages/file-upload.html">file upload</a></li>
             </ul>
           </li>
           <li><a>Cookies</a>
             <ul>
-              <li><a href="enabled-disabled.html">enabled/disabled</a></li>
-              <li><a href="create-retrieve.html">create/retrieve</a></li>
-              <li><a href="modify-delete.html">modify/delete</a></li>
+              <li><a href="../navbar-pages/enabled-disabled.html">enabled/disabled</a></li>
+              <li><a href="../navbar-pages/create-retrieve.html">create/retrieve</a></li>
+              <li><a href="../navbar-pages/modify-delete.html">modify/delete</a></li>
             </ul>
           </li>
           <li><a>Sessions</a>
             <ul>
-              <li><a href="start.html">start</a></li>
-              <li><a href="get-modify.html">get/modify</a></li>
-              <li><a href="destroy.html">destroy</a></li>
+              <li><a href="../navbar-pages/start.html">start</a></li>
+              <li><a href="../navbar-pages/get-modify.html">get/modify</a></li>
+              <li><a href="../navbar-pages/destroy.html">destroy</a></li>
             </ul>
           </li>
           <li><a>Date/Time</a>
             <ul>
-              <li><a href="today-is.html">today is</a></li>
-              <li><a href="timezone.html">timezone</a></li>
-              <li><a href="timestamp.html">timestamp</a></li>
+              <li><a href="../navbar-pages/today-is.html">today is</a></li>
+              <li><a href="../navbar-pages/timezone.html">timezone</a></li>
+              <li><a href="../navbar-pages/timestamp.html">timestamp</a></li>
             </ul>
           </li>
           <li><a>DataBase</a>
             <ul>
-              <li><a href="reserved.html">(reserved)</a></li>
+              <li><a href="../navbar-pages/reserved.html">(reserved)</a></li>
             </ul>
           </li>
-          <li><a href="php-info.html">PhpInfo</a></li>
+          <li><a href="../navbar-pages/php-info.html">PhpInfo</a></li>
         </ul>
       </nav>
     </div>
@@ -70,12 +70,9 @@
   </div>
 
   <div class="content">
-    <h2>POST Form</h2>
-    <form action="../backend/post.php" method="post">
-      Name: <input type="text" name="name"><br>
-      E-mail: <input type="text" name="email"><br>
-      <input type="submit" value="Send">
-    </form>
+    <h2>Answer</h2>
+    <p>Welcome ,<?php echo $_POST["name"]; ?>!<br>
+      Your email address is: <?php echo $_POST["email"]; ?>
   </div>
 
   <div class="img">
@@ -83,5 +80,6 @@
       Project2
     </div>
   </div>
+
 </body>
 </html>

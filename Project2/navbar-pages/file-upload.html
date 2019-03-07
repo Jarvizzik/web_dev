@@ -70,10 +70,12 @@
   </div>
 
   <div class="content">
-    <h2>When to use GET?</h2>
-    <p>Information sent from a form with the GET method is visible to everyone (all variable names and values are displayed in the URL). GET also has limits on the amount of information to send. The limitation is about 2000 characters. However, because the variables are displayed in the URL, it is possible to bookmark the page. This can be useful in some cases.
-      GET may be used for sending non-sensitive data.
-      Note: GET should NEVER be used for sending passwords or other sensitive information!</p>
+    <h2>File Uploading</h2>
+    <form action="../backend/upload.php" method="post" enctype="multipart/form-data">
+      Select image to upload:
+      <input type="file" name="fileToUpload" id="fileToUpload">
+      <input type="submit" value="Upload Image" name="submit">
+    </form>
   </div>
 
   <div class="img">
