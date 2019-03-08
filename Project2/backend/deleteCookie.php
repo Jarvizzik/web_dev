@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+// set the expiration date to one hour ago
+setcookie("user", "", time() - 3600);
+?>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -71,8 +75,10 @@
 
   <div class="content">
     <h2>Answer</h2>
-    <p>Welcome ,<?php echo $_POST["name"]; ?>!<br>
-      Your email address is: <?php echo $_POST["email"]; ?></p>
+    <p><?php
+         echo "Cookie 'user' is deleted.";
+       ?>
+    </p>
   </div>
 
   <div class="img">

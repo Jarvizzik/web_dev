@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+// Start the session
+session_start();
+?>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -71,8 +75,14 @@
 
   <div class="content">
     <h2>Answer</h2>
-    <p>Welcome ,<?php echo $_POST["name"]; ?>!<br>
-      Your email address is: <?php echo $_POST["email"]; ?></p>
+    <p>
+      <?php
+        // Set session variables
+        $_SESSION["favcolor"] = "blue";
+        $_SESSION["favanimal"] = "dog";
+        echo "Session variables are set.";
+        ?>
+    </p>
   </div>
 
   <div class="img">

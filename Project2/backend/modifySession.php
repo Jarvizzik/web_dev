@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+session_start();
+?>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -71,8 +74,14 @@
 
   <div class="content">
     <h2>Answer</h2>
-    <p>Welcome ,<?php echo $_POST["name"]; ?>!<br>
-      Your email address is: <?php echo $_POST["email"]; ?></p>
+    <p><?php
+        // to change a session variable, just overwrite it
+        $_SESSION["favcolor"] = "yellow";
+        $_SESSION["favanimal"] = "cat";
+        echo "Favorite color is " . $_SESSION["favcolor"] . ".<br>";
+        echo "Favorite animal is " . $_SESSION["favanimal"] . ".";
+       ?>
+    </p>
   </div>
 
   <div class="img">

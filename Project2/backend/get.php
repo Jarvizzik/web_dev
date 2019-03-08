@@ -72,7 +72,7 @@
   <div class="content">
     <h2>Answer</h2>
     <p>Welcome ,<?php echo $_GET["name"]; ?>!<br>
-      Your email address is: <?php echo $_GET["email"]; ?>
+      Your email address is: <?php echo $_GET["email"]; ?></p>
   </div>
 
   <div class="img">
