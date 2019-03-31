@@ -141,8 +141,7 @@ tr:nth-child(even) {
 }
 
 .section-heading-spacer {
-  float: left;
-  width: 100%;
+  width: 90%;
   border-top: 3px solid #e7e7e7;
 }
 
@@ -360,33 +359,33 @@ img {
 }
 
 .phonelink{
-    position: fixed; /* Lock location always on the scree */
-    bottom: 0; /* Set to the bottom */
-    right: 0; /* Set to the right */
-    margin: 30px; /* Add space around background */
+  position: fixed; /* Lock location always on the scree */
+  bottom: 0; /* Set to the bottom */
+  right: 0; /* Set to the right */
+  margin: 30px; /* Add space around background */
 }
 .phoneicon{
-    width: 60px; /* Set width of icon */
-    height: 60px; /* Set height of icon */
-    opacity: 0.7;
+  width: 60px; /* Set width of icon */
+  height: 60px; /* Set height of icon */
+  opacity: 0.7;
 }
 .phoneicon:hover{
-    opacity: 1;
+  opacity: 1;
 }
 
 @media screen and (max-width: 480px){
-    .lgscreenphone{
-        display: none;  /* On small screens make phone icon disappear */
-    }
-    .mbscreenphone{
-        display: block; /* On small screens make phone icon appear */
-    }
+  .lgscreenphone{
+    display: none;  /* On small screens make phone icon disappear */
+  }
+  .mbscreenphone{
+    display: block; /* On small screens make phone icon appear */
+  }
 }
 @media screen and (min-width: 481px){
-    .mbscreenphone{
-        display: none; /* On large screens make phone icon disappear */
-    }
-    .lgscreenphone{
-        display: block; /* On large screens make phone icon appear */
-    }
+  .mbscreenphone{
+    display: none; /* On large screens make phone icon disappear */
+  }
+  .lgscreenphone{
+    display: block; /* On large screens make phone icon appear */
+  }
 }
